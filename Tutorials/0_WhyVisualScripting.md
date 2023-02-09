@@ -4,7 +4,7 @@
 
 Visual scripting is a way to represent game logic that uses visual elements instead of traditional code. It's a common tool in modern game engines, built to help non-programmers understand and modify what happens in a game.
 
-The specifics vary a bit across engines. Programs like Scratch have users assemble lego-like blocks together, while Unity and Unreal use nodes and edges. I'll be focusing on Unity's version, but the core ideas here should carry over to other engines. 
+The specifics vary a bit across engines. Programs like Scratch have users assemble lego-like blocks together, while Unity and Unreal use nodes and edges. I'll be focusing on Unity's version, but the core ideas here should carry over to other node-and-edge-driven systems. 
 
 ## The Benefits
 
@@ -48,7 +48,7 @@ This isn't to say that it could *never* be worthwhile to use visual scripting fo
 
 ### Performance
 
-The most obvious downside of visual scripting is its speed. In Unity, <a href="https://www.youtube.com/watch?v=Lyw98dl5acE">it can be hundreds of times slower than C# code!</a> If your game performance needs to be perfected down to the microsecond, that will likely be a deal-breaker.
+The most obvious downside of visual scripting is its speed. In Unity, [It can be hundreds of times slower than C# code!](https://www.youtube.com/watch?v=Lyw98dl5acE) If your game performance needs to be perfected down to the microsecond, that will likely be a deal-breaker.
 
 There *are* ways to limit this problem, though. For one thing, you can break your game logic into "layers" - the outer layer being visual scripting, and the inner layer being C# code. Since visual scripting nodes can call C# scripts, you can treat the visual scripting nodes as an "interface" for designers to interact with, while putting the heavier underlying logic in C#.
 
@@ -70,4 +70,8 @@ Visual scripting can be valuable for projects that...
 Visual scripting can pose a problem when it...
 - Is used for complex math (or anything else that would be simpler with some C# code).
 - Is used on highly performance-intensive projects.
+
+## References
+
+- https://www.youtube.com/watch?v=Lyw98dl5acE
 
