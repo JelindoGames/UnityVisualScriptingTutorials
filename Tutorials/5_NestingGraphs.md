@@ -1,8 +1,8 @@
-# Part 4: Nesting Graphs
+# Part 5: Nesting Graphs
 
 ## Introduction 
 
-(The following is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the "Nodes within Nodes" section.)
+(This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the "Nodes within Nodes" section.)
 
 Programmers tend to avoid large blocks of code. Instead, they prefer to separate it into smaller functions. See the following pseudocode:
 
@@ -42,7 +42,7 @@ void getWater() {
 }
 ```
 
-There's a lot of nasty code repetition here, and it's also a bit hard to read since the actions so specific.
+There's a lot of nasty code repetition here, and it's also a bit hard to read since the actions are so specific.
 
 Let's fix this by moving the low-level logic somewhere else.
 
@@ -71,3 +71,114 @@ Subgraphs are useful when you have large blocks of logic you want to hide or reu
 Consider the following graph from [Part 3](3_TheBlackBoard.md). Recall that it sums up all the numbers between 0 and 100.
 
 ![img1.png](../Images/3/img2.png)
+
+Imagine that, afterward, we wanted to sum up the numbers between 0 and 50. Then, the numbers between 0 and 30. What are our options?
+
+Of course, we can simply copy and paste all our nodes two more times, like so:
+
+![img1.png](../Images/5/img1.png)
+
+Then, in the second and third for loops, we'd simply change "Last" to 50 and 30.
+
+But this is very wasteful. Why duplicate logic when you can put it all in one place for reuse?
+
+A better alternative would be to create a subgraph. How can we do that?
+
+## Creating and Using a Subgraph
+
+Open the node creation menu, and search for "Subgraph." The resulting node should look like this.
+
+![img2.png](../Images/5/img2.png)
+
+Click on the Subgraph node, and take a look at the Node Inspector on the top left. There, we can create a new graph.
+
+![img3.png](../Images/5/img3.png)
+
+Note how similar the interface is to that of the Script Machine component. We can either make an embedded graph (in this case, embedded in this *graph*, not the gameObject), or we can reference a graph file.
+- Note that we **cannot** reference a graph that's embedded in a gameObject.
+
+Let's stick with the embedded option, and give our subgraph the title "SumIntegersUpTo." Click "Edit Graph." The resulting interface should look like this:
+
+![img4.png](../Images/5/img4.png)
+
+The interface here is slightly different from a "regular" graph. For one thing, we now have an input node and an output node. These define how the higher-level graph will interact with this subgraph.
+
+In the graph inspector, we see that we can add Trigger Inputs, Trigger Outputs, Data Inputs, and Data Outputs.
+
+**Trigger Inputs**: Allow logical flow from the high-level graph into this graph.
+
+**Trigger Outputs**: Allow logical flow from this graph into the high-level graph.
+
+**Data Inputs**: Allow the high-level graph to send data to this graph.
+
+**Data Outputs**: Allow this graph to send data to the high-level graph.
+
+What kinds of inputs do we want for a subgraph that sums up any number from 0 to 100... or 0 to 50... or 0 to 30?
+
+Well, we definitely want at least one trigger input and one trigger output, so that logic can flow in and out of this graph. Let's call these "Start" and "Finish."
+
+When we create these, we get to decide the "Key" and "Label" for both. The key is a unique identifier for the input/output, and the label is the name that you'll see when editing the graph.
+
+When you add the trigger input and output, your graph should look like this:
+
+![img5.png](../Images/5/img5.png)
+
+At this point, we can move our for loop logic from the high-level graph to the subgraph.
+
+After copy-pasting the logic and connecting it with Start and Finish, we end up with this subgraph:
+
+![img6.png](../Images/5/img6.png)
+
+...But something is wrong. Can you spot what it is?
+
+The issue is that we're trying to reference the Blackboard variable "CurrentSum." This is a graph-scope variable originally made in the higher-level graph. That means we can't access it!
+
+We have to make a new Blackboard variable as a replacement - one that we *can* access in the subgraph. Then, we'll need to change the Get and Set nodes appropriately.
+
+Once that's done, we should have a working subgraph! With the for-loop moved, we can simplify the high-level graph to this:
+
+![img7.png](../Images/5/img7.png)
+
+Now, run the game and you should see "4950" appear in the console, just like with the original graph in Part 3!
+
+This subgraph still leaves a bit to be desired, though.
+
+## Inputting and Outputting Data
+
+Our subgraph still has two core issues:
+- What if we want to sum up to a number different from 100?
+- What if we want to do more than print the result?
+
+Both of these problems can be solved with data inputs/outputs.
+- We can have a data input which defines the top index of our for loop.
+- We can have a data output for our sum, so we can pass that value to the higher level graph.
+
+With that in mind, let's add these to the graph inspector:
+
+![img8.png](../Images/5/img8.png)
+
+When we add those, our input and output nodes will change as follows.
+
+![img9.png](../Images/5/img9.png)
+
+Now, all we have to do is integrate those values into the graph, like so:
+
+![img10.png](../Images/5/img10.png)
+
+If we look at the high-level graph again, we can see that the SumIntegersUpTo node looks a little different.
+
+Let's provide it with input we need, and then print its output, just to make sure everything is still working as expected.
+
+![img11.png](../Images/5/img11.png)
+
+Run the game and you should see 1225 in the console - the sum of all numbers from 0 to 50!
+
+Finally, let's return to our original goal: summing all numbers from 0 to 100, and then 0 to 50, and then 0 to 30. Doing that is much less complicated now!
+
+![img12.png](../Images/5/img12.png)
+
+Run the game and see the results print one by one: 4950, 1225, and 435.
+
+## References
+
+https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-add-subgraph.html
