@@ -20,6 +20,18 @@ It assumes a basic understanding of the Unity Engine and C#.
 
 [Part 5: The Blackboard](Tutorials/3_TheBlackboard.md)
 
+### More Advanced Usage
+
+Part X: Coroutines in Visual Scripting
+
+Part X: Events in Visual Scripting
+
+Part X: Custom Types in Visual Scripting
+
+Part X: Custom Nodes
+
+Part X: State Graphs
+
 ## Notes
 
 - All screenshots / GIFs are from Unity 2021.3.11f1.
