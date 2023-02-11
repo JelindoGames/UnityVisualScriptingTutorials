@@ -14,11 +14,11 @@ It assumes a basic understanding of the Unity Engine and C#.
 
 [Part 2: Graphs, Nodes, and Flow](Tutorials/2_GraphsNodesAndFlow.md)
 
-[Part 3: Connecting Visual Scripting with C#](Tutorials/3_ConnectingVisualScriptingWithC%23.md)
+[Part 3: The Blackboard](Tutorials/3_TheBlackboard.md)
 
-[Part 4: Nesting Graphs](Tutorials/5_NestingGraphs.md)
+[Part 4: Connecting Visual Scripting with C#](Tutorials/4_ConnectingVisualScriptingWithC%23.md)
 
-[Part 5: The Blackboard](Tutorials/3_TheBlackboard.md)
+[Part 5: Nesting Graphs](Tutorials/5_NestingGraphs.md)
 
 ## Notes
 
