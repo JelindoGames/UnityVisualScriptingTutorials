@@ -80,7 +80,7 @@ Of course, we can simply copy and paste all our nodes two more times, like so:
 
 Then, in the second and third for loops, we'd simply change "Last" to 50 and 30.
 
-But this is very wasteful. Why duplicate logic when you can put it all in one place for reuse?
+This is clearly wasteful, though. Why duplicate logic when you can put it all in one place for reuse?
 
 A better alternative would be to create a subgraph. How can we do that?
 
@@ -115,7 +115,7 @@ In the graph inspector, we see that we can add Trigger Inputs, Trigger Outputs, 
 
 What kinds of inputs do we want for a subgraph that sums up any number from 0 to 100... or 0 to 50... or 0 to 30?
 
-Well, we definitely want at least one trigger input and one trigger output, so that logic can flow in and out of this graph. Let's call these "Start" and "Finish."
+Well, we definitely want at least one trigger input and one trigger output, so logic can flow in and out of this graph. Let's call these "Start" and "Finish."
 
 When we create these, we get to decide the "Key" and "Label" for both. The key is a unique identifier for the input/output, and the label is the name that you'll see when editing the graph.
 
@@ -131,9 +131,9 @@ After copy-pasting the logic and connecting it with Start and Finish, we end up 
 
 ...But something is wrong. Can you spot what it is?
 
-The issue is that we're trying to reference the Blackboard variable "CurrentSum." This is a graph-scope variable originally made in the higher-level graph. That means we can't access it!
+The issue is that we're trying to reference the Blackboard variable "CurrentSum." This is a graph-scope variable originally made in the higher-level graph. Therefore, it belongs to that graph only, so we can't access it here!
 
-We have to make a new Blackboard variable as a replacement - one that we *can* access in the subgraph. Then, we'll need to change the Get and Set nodes appropriately.
+We have to make a new Blackboard variable as a replacement - one that we *can* access in the subgraph. Then, we'll need to change the Get and Set nodes to reference *that* variable instead.
 
 Once that's done, we should have a working subgraph! With the for-loop moved, we can simplify the high-level graph to this:
 

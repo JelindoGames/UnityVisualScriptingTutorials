@@ -73,4 +73,8 @@ At this point, the best thing you can do is experiment. Search around in the nod
 
 
 ## Notes
-- You can also make a scripting graph by right-clicking in your project view and choosing Create > Visual Scripting > Script Graph. However, while you'll be able to edit this graph, it won't do anything unless you make a Script Machine reference it.
+- You can also make a scripting graph by right-clicking in your project view and choosing Create > Visual Scripting > Script Graph. However, while you'll be able to edit this graph, it won't do anything unless you have a Script Machine reference it.
+
+## References
+
+https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-graph-machine-types.html

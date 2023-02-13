@@ -73,5 +73,5 @@ Visual scripting can pose a problem when it...
 
 ## References
 
-- https://www.youtube.com/watch?v=Lyw98dl5acE
+https://www.youtube.com/watch?v=Lyw98dl5acE
 

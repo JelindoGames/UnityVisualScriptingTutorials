@@ -2,7 +2,7 @@
 
 This is a step-by-step tutorial series for Unity's visual scripting system.
 
-It assumes a basic understanding of the Unity Engine and C#.
+It assumes a very basic understanding of the Unity Engine.
 
 ## Sections
 

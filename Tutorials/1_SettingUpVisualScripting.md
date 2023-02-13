@@ -25,6 +25,16 @@ According to Bolt's page on the Unity Asset Store, the earliest version of Unity
 
 Now that you've installed visual scripting, you can follow along with the rest of this tutorial series! If things aren't working as expected, you may want to check this page again to make sure the installation was done properly.
 
+## References
+
+https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/index.html
+
+https://assetstore.unity.com/packages/tools/visual-scripting/bolt-163802
+
+https://www.youtube.com/watch?v=aQceChK-kC4
+
+
+
 
 
 

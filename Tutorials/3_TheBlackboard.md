@@ -59,7 +59,8 @@ What does that do? It sets a special number called the index to **First**. Then,
 
 With that in mind, what's happening here?  To break it down, pay attention to the flow.
 
-- The For Loop node runs right away. It sets the index to 0, and then runs the body repeatedly, increasing the index by 1 with each re-run.
+- The Start node flows into the For Loop node right away.
+- The For Loop node sets its index to 0, and then runs the body repeatedly, increasing the index by 1 with each re-run.
 - In the body, CurrentSum's value is set to the sum of the index and itself. In other words, it's increased by the index value.
 - Finally, when the index goes beyond 100, the For Loop runs the exit.
 
@@ -70,7 +71,7 @@ If you said it's summing up all the numbers between 0 and 100, you're correct! T
 
 If you're unconfident about that fact, try to follow the flow yourself, as if you're Unity running the code.
 
-Once you understand this example, your understanding of Blackboard variables will be in a very good place.
+If you understand this example, your understanding of Blackboard variables is in a very good place.
 
 ## Blackboard Variables in C#
 
@@ -78,4 +79,6 @@ Unity.VisualScripting provides a class called `Variables` which lets you access 
 
 ## References:
 
-- https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variables-reference.html
+https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variables.html
+
+https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variables-reference.html

@@ -34,7 +34,7 @@ Make a new empty gameObject called "Printer," and add the script as a component.
 Now, we need to make a graph that can access this script. **Recall that embedded graphs have access to their gameObject's components.** Because of that, we should make an embedded graph on the same gameObject as our script.
 - (Note: Technically, an unembedded graph could also work - if you stored the PrintScript instance as a Blackboard variable.)
 
-At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"....
+At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"...
 
 **...except you likely won't find anything.**
 
@@ -64,7 +64,7 @@ Finally, tell PrintMessage what to print and when to run. This should be familia
 
 ![img4.png](../Images/4/img5.png)
 
-Play the game and you should see that message show up in the console!
+Play the game, and you should see that message show up in the console!
 
 
 ## Moving Forward
