@@ -74,3 +74,7 @@ Play the game, and you should see that message show up in the console!
 By calling C# code from our graphs, we can nicely hide lower-level logic from our higher-level graphs.
 
 In the next section, we'll talk about another way to separate high-level logic with low-level logic: **nesting graphs in other graphs**.
+
+## Next Lesson
+
+[5 - Nesting Graphs](5_NestingGraphs.md)

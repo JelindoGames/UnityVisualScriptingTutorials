@@ -71,11 +71,13 @@ If you got the above example to work, then you already understand the fundamenta
 At this point, the best thing you can do is experiment. Search around in the node creation menu and see how different kinds of nodes work. Experiment with a longer or more complex web of nodes. Try doing some math calculations!
 
 
-
-
 ## Notes
 - You can also make a scripting graph by right-clicking in your project view and choosing Create > Visual Scripting > Script Graph. However, while you'll be able to edit this graph, it won't do anything unless you have a Script Machine reference it.
 
 ## References
 
 https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-graph-machine-types.html
+
+## Next Lesson
+
+[3 - The Blackboard](3_TheBlackboard.md)

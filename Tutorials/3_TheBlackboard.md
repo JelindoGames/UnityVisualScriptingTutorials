@@ -84,3 +84,7 @@ Unity.VisualScripting provides a class called `Variables` which lets you access 
 https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variables.html
 
 https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variables-reference.html
+
+## Next Lesson
+
+[4 - Connecting Visual Scripting with C#](4_ConnectingVisualScriptingWithC%23.md)

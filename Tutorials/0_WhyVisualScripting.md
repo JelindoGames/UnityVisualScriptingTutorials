@@ -77,3 +77,7 @@ Visual scripting can pose a problem when it...
 
 https://www.youtube.com/watch?v=Lyw98dl5acE
 
+## Next Lesson
+
+[1 - Setting Up Visual Scripting](1_SettingUpVisualScripting.md)
+

@@ -35,6 +35,10 @@ https://assetstore.unity.com/packages/tools/visual-scripting/bolt-163802
 
 https://www.youtube.com/watch?v=aQceChK-kC4
 
+## Next Lesson
+
+[2 - Graphs, Nodes, and Flow](2_GraphsNodesAndFlow.md)
+
 
 
 
