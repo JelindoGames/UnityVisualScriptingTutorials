@@ -4,7 +4,7 @@
 
 ## Introduction
 
-(This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the "Nodes within Nodes" section.)
+(This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the next section.)
 
 Programmers tend to avoid large blocks of code. Instead, they prefer to separate it into smaller functions. See the following pseudocode:
 
@@ -74,7 +74,7 @@ Consider the following graph from [Part 3](3_TheBlackBoard.md). Recall that it s
 
 <img alt="img1.png" src="../Images/3/img2.png"/>
 
-Imagine that, afterward, we wanted to sum up the numbers between 0 and 50. Then, the numbers between 0 and 30. What are our options?
+Imagine that, afterward, we wanted to sum up the numbers between 0 and 50, and then the numbers between 0 and 30. What are our options?
 
 Of course, we can simply copy and paste all our nodes two more times, like so:
 

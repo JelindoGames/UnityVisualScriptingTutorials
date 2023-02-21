@@ -14,13 +14,13 @@ The specifics vary a bit across engines. Programs like Scratch have users assemb
 
 With visual scripting, designers can manipulate the logic of a game without diving into the specifics of the code. 
 
-This is especially useful for rapid iteration, where designers can change aspects of the game and quickly replay it. This is useful for quickly experimenting with new concepts, or perfecting existing ones.
+This is especially useful for rapid iteration, where designers can change aspects of the game and quickly replay it. This can help designers quickly experiment with new concepts, or perfect existing ones.
 
 ### Representing Sequential/Branching Logic
 
 For certain jobs, visual scripting stands out as the most effective approach. Here's one example.
 
-Imagine that you're making a visual novel with lots of branching choices. You need to represent the entire game's content (dialogue / choices for each branch). What are your options?
+Imagine that you're making a choose-your-own-adventure text game with lots of branching choices. You need to represent the entire game's content (dialogue / choices for each branch). What are your options?
 - A single text file
   - Will need lots of skips from one line to another. Following the logic will get difficult, fast.
 - Multiple text files
@@ -33,9 +33,9 @@ Imagine that you're making a visual novel with lots of branching choices. You ne
   - Searching for a specific piece of dialogue can be very difficult.
   - Like with multiple text files, can end in massive file structures.
 
-In comparison, Unity's visual scripting system feels like a natural fit. Its node-and-edge system shows a clear sequence of events, so you can understand exactly what happens when. Additionally, representing branches is easy; you can just choose a different node to go to under a certain condition. Even better, bloat is less of an issue, since a node can contain other, smaller nodes.
+In comparison, Unity's visual scripting system feels like a natural fit. Its node-and-edge system shows a clear sequence of events, so you can understand exactly what happens when. Additionally, representing branches is easy; you can just go to a different node under a certain condition. Bloat is also less of an issue, since a node can contain other, "smaller" nodes.
 
-Of course, the visual novel was just an example, but it captures an important principle:
+Of course, the choose-your-own-adventure game was just an example, but it captures an important principle:
 
 *In general, visual scripting works best for games whose high-level logic is sequential!* (e.g. moving from one piece of dialogue, to the next, to the next...)
 
@@ -56,7 +56,7 @@ There *are* ways to limit this problem, though. For one thing, you can break you
 
 ### Inappropriate Use
 
-When you learn visual scripting, it's tempting to use it for everything. However, remember that the key benefit of visual scripting is its intuitiveness and designer-friendliness. 
+When you learn visual scripting, it's tempting to use it for everything. However, remember that the key benefit of visual scripting is its intuitiveness and designer friendliness. 
 
 Sometimes, visual scripting can make something look more complicated than it is. This is especially true for math-heavy tasks like player movement or physics.
 
