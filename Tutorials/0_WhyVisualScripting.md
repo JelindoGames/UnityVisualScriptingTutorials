@@ -1,5 +1,7 @@
 # Part 0: Why Visual Scripting?
 
+**Contents**: [What is Visual Scripting?](#what-is-visual-scripting) | [The Benefits](#the-benefits) | [The Drawbacks](#the-drawbacks) | [TL;DR](#tldr)
+
 ## What is Visual Scripting?
 
 Visual scripting is a way to represent game logic that uses visual elements instead of traditional code. It's a common tool in modern game engines, built to help non-programmers understand and modify what happens in a game.

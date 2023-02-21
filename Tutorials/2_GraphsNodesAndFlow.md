@@ -1,5 +1,7 @@
 # Part 2: Graphs, Nodes, and Flow
 
+**Contents**: [Machines and Graphs](#machines-and-graphs) | [Basics of a Graph](#basics-of-a-graph) | [Moving Forward](#moving-forward)
+
 ## Machines and Graphs
 
 In visual scripting, **graphs** are where the game logic lives. On the other hand, a **machine** is what actually runs a graph. 
@@ -28,7 +30,7 @@ At this point, you can click "Edit Graph," and start scripting!
 
 When you open your graph, you'll see something like this.
 
-![img2-1.png](../Images/2/img1.png)
+<img alt="img2-1.png" height="400" src="../Images/2/img1.png"/>
 
 There's a fair amount  here, but for now, let's  focus on the main panel. There's a graph with two nodes already present: **Start** and **Update**.
 
@@ -40,26 +42,25 @@ Let's connect some nodes to these and see what happens.
 
 Let's start with a simple print statement.
 
-Right-click the main panel to open the node creation menu. Search for the "Print" node, and then select it to add it to the graph. 
+Right-click the main panel to open the node creation menu. Search for the "Print" node, and then select it to add it to the graph.
 
-![img2-2.png](../Images/2/img2.png)
+<img alt="img2-2.png" height="400" src="../Images/2/img2.png"/>
 
-
-![img2-3.png](../Images/2/img3.png)
+<img alt="img2-3.png" height="400" src="../Images/2/img3.png"/>
 
 Of course, this Print node doesn't know when to run or what to print yet. Let's solve the former problem by creating logical flow from the Start node to the Print node. Do that by connecting their green arrows together.
 
-![img2-4.gif](../Images/2/img4.gif)
+<img alt="img2-4.gif" height="400" src="../Images/2/img4.gif"/>
 
 Technically, this logical flow is just a special type of data, called - appropriately enough - "Flow." The Start node outputs it, and then the Print node takes it as input. If we wanted something to happen after our print, then we'd connect the Print node's output with the next node's Flow input.
 
 The Print node is still missing an input: the actual message to display. To fix this, let's add a String Literal node.
 
-![img2-5.gif](../Images/2/img5.gif)
+<img alt="img2-5.gif" height="400" src="../Images/2/img5.gif"/>
 
-In the String Literal node's text field, type in the message you want. Then connect it with the Message input on the Print node. The final result should look like this: 
+In the String Literal node's text field, type in the message you want. Then connect it with the Message input on the Print node. The final result should look like this:
 
-![img2-6.png](../Images/2/img6.png)
+<img alt="img2-6.png" height="400" src="../Images/2/img6.png"/>
 
 Exit the graph window, and play the scene. If all goes according to plan, you should see "Hello World!" show up on the console.
 

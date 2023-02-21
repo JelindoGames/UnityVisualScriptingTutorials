@@ -1,10 +1,12 @@
 # Part 3: The Blackboard
 
+**Contents**: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
+
 Sometimes, it's useful to store variables for reuse. The Blackboard - the panel on the bottom left of the graph view - makes this possible in visual scripting.
 
-![img1.png](../Images/3/img1.png)
+<img alt="img1.png" height="400" src="../Images/3/img1.png"/>
 
-## Scopes
+## Variable Scopes
 
 The Blackboard lets you save variables in five scopes.
 
@@ -36,7 +38,7 @@ For convenience, you can drag a variable from the Blackboard to the graph to mak
 
 Consider this graph. Note the Blackboard variable called "MysteryNumber" with an initial value of 10.
 
-![img3.png](../Images/3/img3.png)
+<img alt="img3.png" height="400" src="../Images/3/img3.png"/>
 
 What is happening here? Pay attention to the flow.
 - The "Start" node flows into the "Set Variable" node right away.
@@ -51,7 +53,7 @@ Let's try something more difficult.
 
 Consider this graph. Note the Blackboard variable called "CurrentSum" with an initial value of 0.
 
-![img2.png](../Images/3/img2.png)
+<img alt="img2.png" height="400" src="../Images/3/img2.png"/>
 
 This graph introduces the For Loop node.
 

@@ -1,5 +1,7 @@
 # Part 1: Setting Up Visual Scripting
 
+**Contents**: [Installation](#installation) | [Moving Forward](#moving-forward)
+
 ## Installation
 
 The installation for visual scripting depends on your version of Unity.

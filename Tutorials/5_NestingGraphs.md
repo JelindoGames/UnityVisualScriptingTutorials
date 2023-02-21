@@ -1,6 +1,8 @@
 # Part 5: Nesting Graphs
 
-## Introduction 
+**Contents**: [Introduction](#introduction) | [Subgraphs: Representing Graphs as Nodes](#subgraphs--representing-graphs-as-nodes) | [Creating and Using a Subgraph](#creating-and-using-a-subgraph) | [Inputting and Outputting Data with a Subgraph](#inputting-and-outputting-data-with-a-subgraph)
+
+## Introduction
 
 (This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the "Nodes within Nodes" section.)
 
@@ -62,7 +64,7 @@ This code is much nicer; there aren't so many details to look at anymore. In add
 
 Can we do something similar for visual scripting? It turns out that we can!
 
-## Nodes Within Nodes
+## Subgraphs: Representing Graphs As Nodes
 
 You can represent an entire graph as a node in another graph. A "smaller" graph as a node within a "larger" graph is called a **subgraph**.
 
@@ -70,13 +72,13 @@ Subgraphs are useful when you have large blocks of logic you want to hide or reu
 
 Consider the following graph from [Part 3](3_TheBlackBoard.md). Recall that it sums up all the numbers between 0 and 100.
 
-![img1.png](../Images/3/img2.png)
+<img alt="img1.png" src="../Images/3/img2.png"/>
 
 Imagine that, afterward, we wanted to sum up the numbers between 0 and 50. Then, the numbers between 0 and 30. What are our options?
 
 Of course, we can simply copy and paste all our nodes two more times, like so:
 
-![img1.png](../Images/5/img1.png)
+<img alt="img1.png" src="../Images/5/img1.png"/>
 
 Then, in the second and third for loops, we'd simply change "Last" to 50 and 30.
 
@@ -88,18 +90,18 @@ A better alternative would be to create a subgraph. How can we do that?
 
 Open the node creation menu, and search for "Subgraph." The resulting node should look like this.
 
-![img2.png](../Images/5/img2.png)
+<img alt="img2.png" src="../Images/5/img2.png"/>
 
 Click on the Subgraph node, and take a look at the Node Inspector on the top left. There, we can create a new graph.
 
-![img3.png](../Images/5/img3.png)
+<img alt="img3.png" src="../Images/5/img3.png"/>
 
 Note how similar the interface is to that of the Script Machine component. We can either make an embedded graph (in this case, embedded in this *graph*, not the gameObject), or we can reference a graph file.
 - Note that we **cannot** reference a graph that's embedded in a gameObject.
 
 Let's stick with the embedded option, and give our subgraph the title "SumIntegersUpTo." Click "Edit Graph." The resulting interface should look like this:
 
-![img4.png](../Images/5/img4.png)
+<img alt="img4.png" src="../Images/5/img4.png"/>
 
 The interface here is slightly different from a "regular" graph. For one thing, we now have an input node and an output node. These define how the higher-level graph will interact with this subgraph.
 
@@ -121,13 +123,13 @@ When we create these, we get to decide the "Key" and "Label" for both. The key i
 
 When you add the trigger input and output, your graph should look like this:
 
-![img5.png](../Images/5/img5.png)
+<img alt="img5.png" src="../Images/5/img5.png"/>
 
 At this point, we can move our for loop logic from the high-level graph to the subgraph.
 
 After copy-pasting the logic and connecting it with Start and Finish, we end up with this subgraph:
 
-![img6.png](../Images/5/img6.png)
+<img alt="img6.png" src="../Images/5/img6.png"/>
 
 ...But something is wrong. Can you spot what it is?
 
@@ -137,13 +139,13 @@ We have to make a new Blackboard variable as a replacement - one that we *can* a
 
 Once that's done, we should have a working subgraph! With the for-loop moved, we can simplify the high-level graph to this:
 
-![img7.png](../Images/5/img7.png)
+<img alt="img7.png" src="../Images/5/img7.png"/>
 
 Now, run the game and you should see "4950" appear in the console, just like with the original graph in Part 3!
 
 This subgraph still leaves a bit to be desired, though.
 
-## Inputting and Outputting Data
+## Inputting and Outputting Data with a Subgraph
 
 Our subgraph still has two core issues:
 - What if we want to sum up to a number different from 100?
@@ -155,27 +157,27 @@ Both of these problems can be solved with data inputs/outputs.
 
 With that in mind, let's add these to the graph inspector:
 
-![img8.png](../Images/5/img8.png)
+<img alt="img8.png" src="../Images/5/img8.png"/>
 
 When we add those, our input and output nodes will change as follows.
 
-![img9.png](../Images/5/img9.png)
+<img alt="img9.png" src="../Images/5/img9.png"/>
 
 Now, all we have to do is integrate those values into the graph, like so:
 
-![img10.png](../Images/5/img10.png)
+<img alt="img10.png" src="../Images/5/img10.png"/>
 
 If we look at the high-level graph again, we can see that the SumIntegersUpTo node looks a little different.
 
 Let's provide it with input we need, and then print its output, just to make sure everything is still working as expected.
 
-![img11.png](../Images/5/img11.png)
+<img alt="img11.png" src="../Images/5/img11.png"/>
 
 Run the game and you should see 1225 in the console - the sum of all numbers from 0 to 50!
 
 Finally, let's return to our original goal: summing all numbers from 0 to 100, and then 0 to 50, and then 0 to 30. Doing that is much less complicated now!
 
-![img12.png](../Images/5/img12.png)
+<img alt="img12.png" src="../Images/5/img12.png"/>
 
 Run the game and see the results print one by one: 4950, 1225, and 435.
 
