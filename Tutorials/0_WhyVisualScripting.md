@@ -6,7 +6,7 @@
 
 **Visual scripting** is a way to represent game logic that uses visual elements instead of traditional code. It's a common tool in modern game engines, built to help non-programmers understand and modify what happens in a game.
 
-The specifics vary a bit across engines. Programs like Scratch have users assemble lego-like blocks together, while Unity and Unreal use nodes and edges. I'll be focusing on Unity's version, but the core ideas here should carry over to other node-and-edge-driven systems. 
+The specifics vary a bit across engines. Programs like Scratch have users assemble lego-like blocks together, while Unity and Unreal have users draw connections between nodes. I'll be focusing on Unity's version, but the core ideas here should carry over to other systems. 
 
 ## The Benefits
 
@@ -33,7 +33,7 @@ Imagine that you're making a choose-your-own-adventure text game with lots of br
   - Searching for a specific piece of dialogue can be very difficult.
   - Like with multiple text files, can end in massive file structures.
 
-In comparison, Unity's visual scripting system feels like a natural fit. Its node-and-edge system shows a clear sequence of events, so you can understand exactly what happens when. Additionally, representing branches is easy; you can just go to a different node under a certain condition. Bloat is also less of an issue, since a node can contain other, "smaller" nodes.
+In comparison, Unity's visual scripting system feels like a natural fit. Its node-based system shows a clear sequence of events, so you can understand exactly what happens when. Additionally, representing branches is easy; you can just go to a different node under a certain condition. Bloat is also less of an issue, since a node can contain other, "smaller" nodes.
 
 Of course, the choose-your-own-adventure game was just an example, but it captures an important principle:
 
