@@ -40,8 +40,8 @@ Of course, the choose-your-own-adventure game was just an example, but it captur
 ***In general, visual scripting works best for games whose high-level logic is sequential!*** (e.g. moving from one piece of dialogue, to the next, to the next...)
 
 As a rule of thumb:
-- ***Good for Visual Scripting***: This happens. Then that happens. Then that happens.
-- ***Less Good for Visual Scripting***: This thing is revolving around this thing, and if you press A then this thing happens, while the whole time this other thing is happening.
+- *Good for Visual Scripting*: This happens. Then that happens. Then that happens.
+- *Less Good for Visual Scripting*: This thing is revolving around this thing, and if you press A then this thing happens, while the whole time this other thing is happening.
 
 This isn't to say it could *never* be worthwhile to use visual scripting for the second case. In general, though, the closer your game is to a sequence of discrete events, the more neatly it will fit into the visual scripting workflow.
 

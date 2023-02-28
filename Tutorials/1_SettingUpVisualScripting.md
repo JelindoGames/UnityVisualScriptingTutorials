@@ -4,15 +4,15 @@
 
 ## Installation
 
-The installation for visual scripting depends on your version of Unity.
+The installation for Unity Visual Scripting depends on your version of Unity.
 
 ### Versions 2021.1 and Later
 
-<a href="https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/index.html">According to Unity</a>, versions 2021.1 and later have Visual Scripting pre-installed. So, if you have any of those versions, you're already set.
+<a href="https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/index.html">According to Unity</a>, versions 2021.1 and later have Unity Visual Scripting pre-installed. So, if you have any of those versions, you're already set.
 
 ### Versions 2018.4.24 to 2021.0.x
 
-If you have an earlier version of Unity, you'll have to <a href="https://assetstore.unity.com/packages/tools/visual-scripting/bolt-163802"> download Bolt on the Unity Asset Store</a>. (Bolt and Unity Visual Scripting are the same thing; it was called Bolt back when it was a third-party package.)
+If you have an earlier version of Unity, you'll have to <a href="https://assetstore.unity.com/packages/tools/visual-scripting/bolt-163802"> download Bolt on the Unity Asset Store</a>. (Bolt is an earlier form of Unity Visual Scripting; it was named that back when it was a third-party package.)
 
 Once you've downloaded Bolt, open Unity and go to the Package Manager (Window > Package Manager). 
 
@@ -28,7 +28,7 @@ All you need to do now is configure Bolt. Go to Tools > Install Bolt, and a setu
 
 Most of the defaults should be okay. One notable choice is the one between "Programmer Naming" and "Human Naming." This tutorial series will use Programmer Naming. I recommend choosing it too since, when looking up the solution to a problem in Unity, most results will use the "programmer name" of the tools you're dealing with.
 
-**Note:** This tutorial series will focus on Visual Scripting from Unity 2021.1 and beyond, which looks slightly different than Bolt for the older versions.
+**Note:** Bolt and Unity Visual Scripting look slightly different, but function very similarly. This tutorial shows screenshots from Unity Visual Scripting.
 
 ### Versions 2018.4.23 and Older 
 According to Bolt's page on the Unity Asset Store, the earliest version of Unity it will work with is 2018.4.24. So, unfortunately, you'll have to upgrade if you're using any version older than that.

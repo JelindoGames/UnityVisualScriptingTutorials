@@ -48,7 +48,7 @@ Of course, this Print node doesn't know when to run or what to print yet. Let's 
 
 <img alt="img2-4.gif" height="200" src="../Images/2/img4.gif"/>
 
-Technically, this logical flow is just a special type of data, called--appropriately enough--**Flow**. The Start node outputs it, and then the Print node takes it as input. If we wanted something to happen after our print, then we'd connect the Print node's output with the next node's Flow input.
+Technically, this logical flow is just a special type of data, called--appropriately enough--**Flow**. The Start node outputs it, and then the Print node takes it as input. If we wanted something to happen after we printed, then we'd connect the Print node's output with the next node's Flow input.
 
 The Print node is still missing an input: the actual message to display. To fix this, let's add a **String Literal** node.
 

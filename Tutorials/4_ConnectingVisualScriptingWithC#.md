@@ -38,7 +38,7 @@ Now, we need to make a graph that can access this script. ***Recall that embedde
 
 At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"...
 
-***...except you likely won't find anything.***
+*...except you likely won't find anything.*
 
 Why? When you make a new C# script, the visual scripting system doesn't necessarily know about it yet. To fix this, you need to refresh its understanding of the current scripts that are available.
 
@@ -73,7 +73,7 @@ Play the game, and you should see that message show up in the console!
 
 By calling C# code from our graphs, we can nicely hide lower-level logic from our higher-level graphs.
 
-In the next section, we'll talk about another way to separate high-level logic with low-level logic: **nesting graphs in other graphs**.
+In the next section, we'll talk about another way to separate high-level logic with low-level logic: *nesting graphs in other graphs*.
 
 ## Next Lesson
 
