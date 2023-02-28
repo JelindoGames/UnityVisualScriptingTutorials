@@ -33,12 +33,12 @@ Note that it's important for PrintMessage() to be public; otherwise, our graph w
 
 Make a new empty gameObject called "Printer," and add the script as a component.
 
-Now, we need to make a graph that can access this script. **Recall that embedded graphs have access to their gameObject's components.** Because of that, we should make an embedded graph on the same gameObject as our script.
+Now, we need to make a graph that can access this script. ***Recall that embedded graphs have access to their gameObject's components.*** Because of that, we should make an embedded graph on the same gameObject as our script.
 - (Note: Technically, an unembedded graph could also work--if you stored the PrintScript instance as a Blackboard variable.)
 
 At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"...
 
-*...except you likely won't find anything.*
+***...except you likely won't find anything.***
 
 Why? When you make a new C# script, the visual scripting system doesn't necessarily know about it yet. To fix this, you need to refresh its understanding of the current scripts that are available.
 
@@ -46,7 +46,7 @@ Go to Edit > Project Settings > Visual Scripting. You should see something like 
 
 <img alt="img1.png" height="300" src="../Images/4/img1.png"/>
 
-Click *Regenerate Nodes* to update your visual scripting nodes so they reflect your current C# code.
+Click the **Regenerate Nodes** button to update your visual scripting nodes so they reflect your current C# code.
 
 Then, return to the graph editor and the search "PrintScript" in the node creation menu again. This time, it should appear!
 

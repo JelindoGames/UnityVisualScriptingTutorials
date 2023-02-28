@@ -4,7 +4,7 @@
 
 ## Introduction
 
-(This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the next section.)
+*This introduction is mainly for non-coders. If you're familiar with good coding practices, you may want to skip to the next section.*
 
 Programmers tend to avoid large blocks of code. Instead, they prefer to separate it into smaller functions. See the following pseudocode:
 
@@ -92,12 +92,13 @@ Open the node creation menu, and search for "Subgraph." The resulting node shoul
 
 <img alt="img2.png" height="200" src="../Images/5/img2.png"/>
 
-Click on the Subgraph node, and take a look at the Node Inspector on the top left. There, we can create a new graph.
+Click on the Subgraph node, and take a look at the Node Inspector on the top left.
 
 <img alt="img3.png" height="200" src="../Images/5/img3.png"/>
 
 Note how similar the interface is to that of the Script Machine component. We can either make an embedded graph (in this case, embedded in this *graph*, not the gameObject), or we can reference a graph file.
-- Note that we *cannot* reference a graph that's embedded in a gameObject.
+
+***Note that we *cannot* reference a graph that's embedded in a gameObject.***
 
 Let's stick with the embedded option, and give our subgraph the title "SumIntegersUpTo." Click "Edit Graph." The resulting interface should look like this:
 
@@ -105,7 +106,7 @@ Let's stick with the embedded option, and give our subgraph the title "SumIntege
 
 The interface here is slightly different from a "regular" graph. For one thing, we now have an input node and an output node. These define how the higher-level graph will interact with this subgraph.
 
-In the graph inspector, we see that we can add Trigger Inputs, Trigger Outputs, Data Inputs, and Data Outputs.
+In the graph inspector, we see that we can add **Trigger Inputs**, **Trigger Outputs**, **Data Inputs**, and **Data Outputs**.
 
 - **Trigger Inputs**: Allow logical flow from the high-level graph into this graph.
 - **Trigger Outputs**: Allow logical flow from this graph into the high-level graph.
@@ -116,7 +117,7 @@ What kinds of inputs do we want for a subgraph that sums up any number from 0 to
 
 Well, we definitely want at least one trigger input and one trigger output, so logic can flow in and out of this graph. Let's call these "Start" and "Finish."
 
-When we create these, we get to decide the "Key" and "Label" for both. The key is a unique identifier for the input/output, and the label is the name that you'll see when editing the graph.
+When we create these, we get to decide the **Key** and **Label** for both. The key is a unique identifier for the input/output, and the label is the name that you'll see when editing the graph.
 
 When you add the trigger input and output, your graph should look like this:
 

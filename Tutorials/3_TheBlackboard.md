@@ -11,15 +11,11 @@ Sometimes, it's useful to store variables for reuse. The **Blackboard**--the pan
 The Blackboard lets you save variables in five scopes.
 
 - **Graph**: Available in the current graph.
-
 - **Object**: Available for any graph on the current gameObject. 
   - Unembedded graphs can access an object-scope variable. However, the graph must be connected to a machine component on the relevant gameObject.
-
 - **Scene**: Available for any graph in the current scene.
   - Unembedded graphs can access a scene-scope variable. However, the graph must be connected to a machine component on some gameObject in the scene.
-
 - **App**: Available for any graph. Resets when the game finishes running.
-
 - **Saved**: Available for any graph. Doesn't reset when the game finishes running.
   - Under the tab for saved variables, you can access both the original value of the variables (from before the first save), and the current saved values.
   - The "Save Variables" node saves the variables in this scope as they currently are.
@@ -28,7 +24,7 @@ The Blackboard lets you save variables in five scopes.
 
 To create a variable, simply pick the appropriate scope, type in the name of the variable, and then press the '+' icon.
 
-You can now access the variable with three nodes: **Get**, **Set**, and **Has Variable**. Has Variable determines whether the variable has received a value or not.
+You can now access the variable with three nodes: **Get**, **Set**, and **Has Variable**. *Has Variable* determines whether the variable has received a value or not.
 
 For convenience, you can drag a variable from the Blackboard to the graph to make a Get (Variable Name) node.
 
