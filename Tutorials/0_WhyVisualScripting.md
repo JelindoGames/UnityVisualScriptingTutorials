@@ -1,6 +1,6 @@
 # Part 0: Why Visual Scripting?
 
-Contents: [What is Visual Scripting?](#what-is-visual-scripting) | [The Benefits](#the-benefits) | [The Drawbacks](#the-drawbacks) | [TL;DR](#tldr)
+*Contents*: [What is Visual Scripting?](#what-is-visual-scripting) | [The Benefits](#the-benefits) | [The Drawbacks](#the-drawbacks) | [TL;DR](#tldr)
 
 ## What is Visual Scripting?
 

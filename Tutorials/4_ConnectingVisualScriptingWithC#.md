@@ -1,6 +1,6 @@
 # Part 4: Connecting Visual Scripting with C#
 
-Contents: [Motivation](#motivation) | [Calling a C# Script From a Graph](#calling-a-c-script-from-a-graph) | [Moving Forward](#moving-forward)
+*Contents*: [Motivation](#motivation) | [Calling a C# Script From a Graph](#calling-a-c-script-from-a-graph) | [Moving Forward](#moving-forward)
 
 ## Motivation
 

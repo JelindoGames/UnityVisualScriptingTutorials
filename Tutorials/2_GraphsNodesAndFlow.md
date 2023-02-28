@@ -1,6 +1,6 @@
 # Part 2: Graphs, Nodes, and Flow
 
-Contents: [Machines and Graphs](#machines-and-graphs) | [Basics of a Graph](#basics-of-a-graph) | [Moving Forward](#moving-forward)
+*Contents*: [Machines and Graphs](#machines-and-graphs) | [Basics of a Graph](#basics-of-a-graph) | [Moving Forward](#moving-forward)
 
 ## Machines and Graphs
 

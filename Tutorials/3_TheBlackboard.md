@@ -1,6 +1,6 @@
 # Part 3: The Blackboard
 
-Contents: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
+*Contents*: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
 
 Sometimes, it's useful to store variables for reuse. The **Blackboard**--the panel on the bottom left of the graph view--makes this possible in visual scripting.
 

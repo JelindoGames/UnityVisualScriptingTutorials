@@ -1,6 +1,6 @@
 # Part 5: Nesting Graphs
 
-Contents: [Introduction](#introduction) | [Subgraphs: Representing Graphs as Nodes](#subgraphs--representing-graphs-as-nodes) | [Creating and Using a Subgraph](#creating-and-using-a-subgraph) | [Inputting and Outputting Data with a Subgraph](#inputting-and-outputting-data-with-a-subgraph) | [Conclusion](#conclusion)
+*Contents*: [Introduction](#introduction) | [Subgraphs: Representing Graphs as Nodes](#subgraphs--representing-graphs-as-nodes) | [Creating and Using a Subgraph](#creating-and-using-a-subgraph) | [Inputting and Outputting Data with a Subgraph](#inputting-and-outputting-data-with-a-subgraph) | [Conclusion](#conclusion)
 
 ## Introduction
 
