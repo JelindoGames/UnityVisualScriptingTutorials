@@ -23,3 +23,4 @@ It assumes a very basic understanding of the Unity Engine.
 ## Notes
 
 - All screenshots / GIFs are from Unity 2021.3.11f1.
+- This tutorial was written by Jonathan Lehman

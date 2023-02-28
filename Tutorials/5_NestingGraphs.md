@@ -173,13 +173,21 @@ Let's provide it with input we need, and then print its output, just to make sur
 
 <img alt="img11.png" src="../Images/5/img11.png"/>
 
-Run the game and you should see 1225 in the console - the sum of all numbers from 0 to 50!
+Run the game and you should see 1225 in the console -- the sum of all numbers from 0 to 50!
 
 Finally, let's return to our original goal: summing all numbers from 0 to 100, and then 0 to 50, and then 0 to 30. Doing that is much less complicated now!
 
 <img alt="img12.png" src="../Images/5/img12.png"/>
 
 Run the game and see the results print one by one: 4950, 1225, and 435.
+
+## Conclusion
+
+Congratulations! You now know the basics of visual scripting in Unity! 
+
+You should now be well-equipped to get started on projects of your own. 
+
+Advanced tutorials for more niche features, such as representing custom classes as nodes, will likely be added in the future.
 
 ## References
 
