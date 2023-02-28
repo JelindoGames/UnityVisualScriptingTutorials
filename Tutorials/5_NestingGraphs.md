@@ -1,6 +1,6 @@
 # Part 5: Nesting Graphs
 
-**Contents**: [Introduction](#introduction) | [Subgraphs: Representing Graphs as Nodes](#subgraphs--representing-graphs-as-nodes) | [Creating and Using a Subgraph](#creating-and-using-a-subgraph) | [Inputting and Outputting Data with a Subgraph](#inputting-and-outputting-data-with-a-subgraph) | [Conclusion](#conclusion)
+Contents: [Introduction](#introduction) | [Subgraphs: Representing Graphs as Nodes](#subgraphs--representing-graphs-as-nodes) | [Creating and Using a Subgraph](#creating-and-using-a-subgraph) | [Inputting and Outputting Data with a Subgraph](#inputting-and-outputting-data-with-a-subgraph) | [Conclusion](#conclusion)
 
 ## Introduction
 
@@ -97,7 +97,7 @@ Click on the Subgraph node, and take a look at the Node Inspector on the top lef
 <img alt="img3.png" height="200" src="../Images/5/img3.png"/>
 
 Note how similar the interface is to that of the Script Machine component. We can either make an embedded graph (in this case, embedded in this *graph*, not the gameObject), or we can reference a graph file.
-- Note that we **cannot** reference a graph that's embedded in a gameObject.
+- Note that we *cannot* reference a graph that's embedded in a gameObject.
 
 Let's stick with the embedded option, and give our subgraph the title "SumIntegersUpTo." Click "Edit Graph." The resulting interface should look like this:
 

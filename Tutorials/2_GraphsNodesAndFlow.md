@@ -1,12 +1,12 @@
 # Part 2: Graphs, Nodes, and Flow
 
-**Contents**: [Machines and Graphs](#machines-and-graphs) | [Basics of a Graph](#basics-of-a-graph) | [Moving Forward](#moving-forward)
+Contents: [Machines and Graphs](#machines-and-graphs) | [Basics of a Graph](#basics-of-a-graph) | [Moving Forward](#moving-forward)
 
 ## Machines and Graphs
 
-In visual scripting, graphs are where the game logic lives. On the other hand, a machine is what actually runs a graph. 
+In visual scripting, **graphs** are where the game logic lives. On the other hand, a **machine** is what actually runs a graph. 
 
-In order to start with visual scripting, we will have to create a graph and a machine. For now, we'll focus on one type in particular: *script* graphs and *script* machines. This is likely the type you'll use the most.
+In order to start with visual scripting, we will have to create a graph and a machine. For now, we'll focus on one type in particular: **script graphs** and **script machines**. This is likely the type you'll use the most.
 
 ### Setting up a Machine and Graph
 
@@ -17,8 +17,8 @@ The purpose of a Script Machine is simply to run a Scripting Graph. Of course, i
 - **Graph**: Use a graph that lives independently of any specific gameObject/scene.
 
 There are benefits and drawbacks to both choices.
-- **Embed**: An embedded graph lives on a specific gameObject in your scene. It can access all the gameObjects in the scene, and their components.
-- **Graph**: If you don't embed your graph, it will exist independently of your scene. As a result, it won't have access to gameObjects in the scene. This is good if you want to avoid strongly coupling your graph to your gameObject, or if you want to use it in multiple places.
+- Embed: An embedded graph lives on a specific gameObject in your scene. It can access all the gameObjects in the scene, and their components.
+- Graph: If you don't embed your graph, it will exist independently of your scene. As a result, it won't have access to gameObjects in the scene. This is good if you want to avoid strongly coupling your graph to your gameObject, or if you want to use it in multiple places.
 
 For now, let's make an embedded graph. When we select "Embed" as a source, an embedded graph will be auto-created for us.
 
@@ -32,7 +32,7 @@ When you open your graph, you'll see something like this.
 
 There's a fair amount  here, but for now, let's  focus on the main panel. There's a graph with two nodes already present: **Start** and **Update**.
 
-If you've used C# with Unity before, these should be very familiar. **Start** runs once at the beginning of a graph's life cycle, and **Update** runs every frame.
+If you've used C# with Unity before, these should be very familiar. Start runs once at the beginning of a graph's life cycle, and Update runs every frame.
 
 Let's connect some nodes to these and see what happens.
 

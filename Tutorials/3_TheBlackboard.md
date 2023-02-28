@@ -1,8 +1,8 @@
 # Part 3: The Blackboard
 
-**Contents**: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
+Contents: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
 
-Sometimes, it's useful to store variables for reuse. The Blackboard--the panel on the bottom left of the graph view--makes this possible in visual scripting.
+Sometimes, it's useful to store variables for reuse. The **Blackboard**--the panel on the bottom left of the graph view--makes this possible in visual scripting.
 
 <img alt="img1.png" height="300" src="../Images/3/img1.png"/>
 
@@ -28,7 +28,7 @@ The Blackboard lets you save variables in five scopes.
 
 To create a variable, simply pick the appropriate scope, type in the name of the variable, and then press the '+' icon.
 
-You can now access the variable with three nodes: Get, Set, and Has Variable. Has Variable determines whether the variable has received a value or not.
+You can now access the variable with three nodes: **Get**, **Set**, and **Has Variable**. Has Variable determines whether the variable has received a value or not.
 
 For convenience, you can drag a variable from the Blackboard to the graph to make a Get (Variable Name) node.
 
@@ -55,7 +55,7 @@ Consider this graph. Note the Blackboard variable called "CurrentSum" with an in
 
 <img alt="img2.png" height="400" src="../Images/3/img2.png"/>
 
-This graph introduces the For Loop node.
+This graph introduces the **For Loop** node.
 
 What does that do? It sets a special number called the index to **First**. Then, it runs **Body** repeatedly, increasing the index by **Step** with each re-run. Finally, when the index goes beyond **Last**, it finishes and runs **Exit**.
 

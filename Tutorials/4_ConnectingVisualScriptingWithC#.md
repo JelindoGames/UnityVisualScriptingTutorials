@@ -1,10 +1,10 @@
 # Part 4: Connecting Visual Scripting with C#
 
-**Contents**: [Motivation](#motivation) | [Calling a C# Script From a Graph](#calling-a-c-script-from-a-graph) | [Moving Forward](#moving-forward)
+Contents: [Motivation](#motivation) | [Calling a C# Script From a Graph](#calling-a-c-script-from-a-graph) | [Moving Forward](#moving-forward)
 
 ## Motivation
 
-As mentioned in [Part 0](0_WhyVisualScripting.md), there are several good reasons to avoid **exclusively** using visual scripting for a game. 
+As mentioned in [Part 0](0_WhyVisualScripting.md), there are several good reasons to avoid *exclusively* using visual scripting for a game. 
 - Visual scripting runs much slower than C# code.
 - Sometimes, it's simpler to express logic through C# code than through visual scripting.
 - In general, it's good practice to separate lower-level operations from higher-level operations.
@@ -38,7 +38,7 @@ Now, we need to make a graph that can access this script. **Recall that embedded
 
 At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"...
 
-**...except you likely won't find anything.**
+*...except you likely won't find anything.*
 
 Why? When you make a new C# script, the visual scripting system doesn't necessarily know about it yet. To fix this, you need to refresh its understanding of the current scripts that are available.
 
@@ -46,7 +46,7 @@ Go to Edit > Project Settings > Visual Scripting. You should see something like 
 
 <img alt="img1.png" height="300" src="../Images/4/img1.png"/>
 
-Click **Regenerate Nodes** to update your visual scripting nodes so they reflect your current C# code.
+Click *Regenerate Nodes* to update your visual scripting nodes so they reflect your current C# code.
 
 Then, return to the graph editor and the search "PrintScript" in the node creation menu again. This time, it should appear!
 

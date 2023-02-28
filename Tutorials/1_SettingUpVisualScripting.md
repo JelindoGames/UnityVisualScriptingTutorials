@@ -1,6 +1,6 @@
 # Part 1: Setting Up Visual Scripting
 
-**Contents**: [Installation](#installation) | [Moving Forward](#moving-forward)
+Contents: [Installation](#installation) | [Moving Forward](#moving-forward)
 
 ## Installation
 
