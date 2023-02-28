@@ -37,13 +37,13 @@ In comparison, Unity's visual scripting system feels like a natural fit. Its nod
 
 Of course, the choose-your-own-adventure game was just an example, but it captures an important principle:
 
-*In general, visual scripting works best for games whose high-level logic is sequential!* (e.g. moving from one piece of dialogue, to the next, to the next...)
+**In general, visual scripting works best for games whose high-level logic is sequential!** (e.g. moving from one piece of dialogue, to the next, to the next...)
 
 As a rule of thumb:
 - *Good for Visual Scripting*: This happens. Then that happens. Then that happens.
 - *Less Good for Visual Scripting*: This thing is revolving around this thing, and if you press A then this thing happens, while the whole time this other thing is happening.
 
-This isn't to say that it could *never* be worthwhile to use visual scripting for the second case. In general, though, the closer your game is to a sequence of discrete events, the more neatly it will fit into the visual scripting workflow.
+This isn't to say it could *never* be worthwhile to use visual scripting for the second case. In general, though, the closer your game is to a sequence of discrete events, the more neatly it will fit into the visual scripting workflow.
 
 
 ## The Drawbacks
@@ -52,7 +52,7 @@ This isn't to say that it could *never* be worthwhile to use visual scripting fo
 
 The most obvious downside of visual scripting is its speed. In Unity, [It can be hundreds of times slower than C# code!](https://www.youtube.com/watch?v=Lyw98dl5acE) If your game performance needs to be perfected down to the microsecond, that will likely be a deal-breaker.
 
-There *are* ways to limit this problem, though. For one thing, you can break your game logic into "layers" - the outer layer being visual scripting, and the inner layer being C# code. Since visual scripting nodes can call C# scripts, you can treat the visual scripting nodes as an "interface" for designers to interact with, while putting the heavier underlying logic in C#.
+There *are* ways to limit this problem, though. For one thing, you can break your game logic into "layers" -- the outer layer being visual scripting, and the inner layer being C# code. Since visual scripting nodes can call C# scripts, you can treat the visual scripting nodes as an "interface" for designers to interact with, while putting the heavier underlying logic in C#.
 
 ### Inappropriate Use
 
@@ -79,5 +79,5 @@ https://www.youtube.com/watch?v=Lyw98dl5acE
 
 ## Next Lesson
 
-[1 - Setting Up Visual Scripting](1_SettingUpVisualScripting.md)
+[Part 1: Setting Up Visual Scripting](1_SettingUpVisualScripting.md)
 

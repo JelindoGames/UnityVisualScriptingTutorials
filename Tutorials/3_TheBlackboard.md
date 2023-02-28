@@ -87,4 +87,4 @@ https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-variab
 
 ## Next Lesson
 
-[4 - Connecting Visual Scripting with C#](4_ConnectingVisualScriptingWithC%23.md)
+[Part 4: Connecting Visual Scripting with C#](4_ConnectingVisualScriptingWithC%23.md)

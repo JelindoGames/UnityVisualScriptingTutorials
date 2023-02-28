@@ -1,8 +1,8 @@
 # VisualScriptingTutorials
 
-This is a step-by-step tutorial series for Unity's visual scripting system.
+This tutorial series covers the basics of Unity's visual scripting system.
 
-It assumes a very basic understanding of the Unity Engine.
+It assumes a basic understanding of the Unity Engine.
 
 ## Sections
 

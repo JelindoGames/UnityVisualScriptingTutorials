@@ -77,4 +77,4 @@ In the next section, we'll talk about another way to separate high-level logic w
 
 ## Next Lesson
 
-[5 - Nesting Graphs](5_NestingGraphs.md)
+[Part 5: Nesting Graphs](5_NestingGraphs.md)

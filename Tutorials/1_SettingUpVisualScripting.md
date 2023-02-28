@@ -37,7 +37,7 @@ https://www.youtube.com/watch?v=aQceChK-kC4
 
 ## Next Lesson
 
-[2 - Graphs, Nodes, and Flow](2_GraphsNodesAndFlow.md)
+[Part 2: Graphs, Nodes, and Flow](2_GraphsNodesAndFlow.md)
 
 
 

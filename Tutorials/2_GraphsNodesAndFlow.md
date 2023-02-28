@@ -80,4 +80,4 @@ https://docs.unity3d.com/Packages/com.unity.visualscripting@1.7/manual/vs-graph-
 
 ## Next Lesson
 
-[3 - The Blackboard](3_TheBlackboard.md)
+[Part 3: The Blackboard](3_TheBlackboard.md)
