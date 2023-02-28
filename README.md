@@ -6,8 +6,6 @@ It assumes a very basic understanding of the Unity Engine.
 
 ## Sections
 
-### Basics
-
 [Part 0: Why Visual Scripting?](Tutorials/0_WhyVisualScripting.md)
 
 [Part 1: Setting Up Visual Scripting](Tutorials/1_SettingUpVisualScripting.md)
