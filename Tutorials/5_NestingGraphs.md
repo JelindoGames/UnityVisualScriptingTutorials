@@ -60,7 +60,7 @@ void getWater() {
 }
 ```
 
-This code is much nicer; there aren't so many details to look at anymore. In addition, there's one universal place that handles going to the fridge: the goToFridge() function. Compare that with the previous code, where that logic was repeated twice - once in getJuice() and once in getWater().
+This code is much nicer; there aren't so many details to look at anymore. In addition, there's one universal place that handles going to the fridge: the goToFridge() function. Compare that with the previous code, where that logic was repeated twice--once in getJuice() and once in getWater().
 
 Can we do something similar for visual scripting? It turns out that we can!
 
@@ -135,7 +135,7 @@ After copy-pasting the logic and connecting it with Start and Finish, we end up 
 
 The issue is that we're trying to reference the Blackboard variable "CurrentSum." This is a graph-scope variable originally made in the higher-level graph. Therefore, it belongs to that graph only, so we can't access it here!
 
-We have to make a new Blackboard variable as a replacement - one that we *can* access in the subgraph. Then, we'll need to change the Get and Set nodes to reference *that* variable instead.
+We have to make a new Blackboard variable as a replacement--one that we *can* access in the subgraph. Then, we'll need to change the Get and Set nodes to reference *that* variable instead.
 
 Once that's done, we should have a working subgraph! With the for-loop moved, we can simplify the high-level graph to this:
 

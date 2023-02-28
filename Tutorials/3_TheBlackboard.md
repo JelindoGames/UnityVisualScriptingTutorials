@@ -2,7 +2,7 @@
 
 **Contents**: [Variable Scopes](#variable-scopes) | [Creating and Using Blackboard Variables](#creating-and-using-blackboard-variables) | [Blackboard Variables in Action](#blackboard-variables-in-action) | [Blackboard Variables in C#](#blackboard-variables-in-c)
 
-Sometimes, it's useful to store variables for reuse. The Blackboard - the panel on the bottom left of the graph view - makes this possible in visual scripting.
+Sometimes, it's useful to store variables for reuse. The Blackboard--the panel on the bottom left of the graph view--makes this possible in visual scripting.
 
 <img alt="img1.png" height="400" src="../Images/3/img1.png"/>
 

@@ -9,7 +9,7 @@ As mentioned in [Part 0](0_WhyVisualScripting.md), there are several good reason
 - Sometimes, it's simpler to express logic through C# code than through visual scripting.
 - In general, it's good practice to separate lower-level operations from higher-level operations.
 
-Fortunately, we can call C# scripts from our visual scripting graphs - and the process is very similar to what we already covered in [Part 2](2_GraphsNodesAndFlow.md).
+Fortunately, we can call C# scripts from our visual scripting graphs--and the process is very similar to what we already covered in [Part 2](2_GraphsNodesAndFlow.md).
 
 ## Calling a C# Script From a Graph
 
@@ -34,7 +34,7 @@ Note that it's important for PrintMessage() to be public; otherwise, our graph w
 Make a new empty gameObject called "Printer," and add the script as a component.
 
 Now, we need to make a graph that can access this script. **Recall that embedded graphs have access to their gameObject's components.** Because of that, we should make an embedded graph on the same gameObject as our script.
-- (Note: Technically, an unembedded graph could also work - if you stored the PrintScript instance as a Blackboard variable.)
+- (Note: Technically, an unembedded graph could also work--if you stored the PrintScript instance as a Blackboard variable.)
 
 At this point, edit the graph and right-click to open the node creation menu. Search for "PrintScript"...
 

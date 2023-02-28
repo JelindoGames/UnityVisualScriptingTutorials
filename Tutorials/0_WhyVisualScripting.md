@@ -52,7 +52,7 @@ This isn't to say it could *never* be worthwhile to use visual scripting for the
 
 The most obvious downside of visual scripting is its speed. In Unity, [It can be hundreds of times slower than C# code!](https://www.youtube.com/watch?v=Lyw98dl5acE) If your game performance needs to be perfected down to the microsecond, that will likely be a deal-breaker.
 
-There *are* ways to limit this problem, though. For one thing, you can break your game logic into "layers" -- the outer layer being visual scripting, and the inner layer being C# code. Since visual scripting nodes can call C# scripts, you can treat the visual scripting nodes as an "interface" for designers to interact with, while putting the heavier underlying logic in C#.
+There *are* ways to limit this problem, though. For one thing, you can break your game logic into layers--the outer layer being visual scripting, and the inner layer being C# code. Since visual scripting nodes can call C# scripts, you can treat the visual scripting nodes as an "interface" for designers to interact with, while putting the heavier underlying logic in C#.
 
 ### Inappropriate Use
 
