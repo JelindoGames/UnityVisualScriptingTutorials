@@ -4,9 +4,9 @@
 
 ## Machines and Graphs
 
-In visual scripting, **graphs** are where the game logic lives. On the other hand, a **machine** is what actually runs a graph. 
+In visual scripting, graphs are where the game logic lives. On the other hand, a machine is what actually runs a graph. 
 
-In order to start with visual scripting, we will have to create a graph and a machine. For now, we'll focus on one type in particular: **script** graphs and **script** machines. This is likely the type you'll use the most.
+In order to start with visual scripting, we will have to create a graph and a machine. For now, we'll focus on one type in particular: *script* graphs and *script* machines. This is likely the type you'll use the most.
 
 ### Setting up a Machine and Graph
 
@@ -17,10 +17,8 @@ The purpose of a Script Machine is simply to run a Scripting Graph. Of course, i
 - **Graph**: Use a graph that lives independently of any specific gameObject/scene.
 
 There are benefits and drawbacks to both choices.
-
-**Embed**: An embedded graph lives on a specific gameObject in your scene. It can access all the gameObjects in the scene, and their components.
-
-**Graph**: If you don't embed your graph, it will exist independently of your scene. As a result, it won't have access to gameObjects in the scene. This is good if you want to avoid strongly coupling your graph to your gameObject, or if you want to use it in multiple places.
+- **Embed**: An embedded graph lives on a specific gameObject in your scene. It can access all the gameObjects in the scene, and their components.
+- **Graph**: If you don't embed your graph, it will exist independently of your scene. As a result, it won't have access to gameObjects in the scene. This is good if you want to avoid strongly coupling your graph to your gameObject, or if you want to use it in multiple places.
 
 For now, let's make an embedded graph. When we select "Embed" as a source, an embedded graph will be auto-created for us.
 
@@ -30,7 +28,7 @@ At this point, you can click "Edit Graph," and start scripting!
 
 When you open your graph, you'll see something like this.
 
-<img alt="img2-1.png" height="400" src="../Images/2/img1.png"/>
+<img alt="img2-1.png" height="350" src="../Images/2/img1.png"/>
 
 There's a fair amount  here, but for now, let's  focus on the main panel. There's a graph with two nodes already present: **Start** and **Update**.
 
@@ -44,23 +42,21 @@ Let's start with a simple print statement.
 
 Right-click the main panel to open the node creation menu. Search for the "Print" node, and then select it to add it to the graph.
 
-<img alt="img2-2.png" height="400" src="../Images/2/img2.png"/>
-
-<img alt="img2-3.png" height="400" src="../Images/2/img3.png"/>
+<img alt="img2-2.gif" height="250" src="../Images/2/img2.gif"/>
 
 Of course, this Print node doesn't know when to run or what to print yet. Let's solve the former problem by creating logical flow from the Start node to the Print node. Do that by connecting their green arrows together.
 
-<img alt="img2-4.gif" height="400" src="../Images/2/img4.gif"/>
+<img alt="img2-4.gif" height="200" src="../Images/2/img4.gif"/>
 
 Technically, this logical flow is just a special type of data, called--appropriately enough--Flow. The Start node outputs it, and then the Print node takes it as input. If we wanted something to happen after our print, then we'd connect the Print node's output with the next node's Flow input.
 
 The Print node is still missing an input: the actual message to display. To fix this, let's add a String Literal node.
 
-<img alt="img2-5.gif" height="400" src="../Images/2/img5.gif"/>
+<img alt="img2-5.gif" height="200" src="../Images/2/img5.gif"/>
 
 In the String Literal node's text field, type in the message you want. Then connect it with the Message input on the Print node. The final result should look like this:
 
-<img alt="img2-6.png" height="400" src="../Images/2/img6.png"/>
+<img alt="img2-6.png" height="200" src="../Images/2/img6.png"/>
 
 Exit the graph window, and play the scene. If all goes according to plan, you should see "Hello World!" show up on the console.
 

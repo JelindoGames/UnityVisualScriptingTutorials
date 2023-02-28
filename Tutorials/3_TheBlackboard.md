@@ -4,25 +4,25 @@
 
 Sometimes, it's useful to store variables for reuse. The Blackboard--the panel on the bottom left of the graph view--makes this possible in visual scripting.
 
-<img alt="img1.png" height="400" src="../Images/3/img1.png"/>
+<img alt="img1.png" height="300" src="../Images/3/img1.png"/>
 
 ## Variable Scopes
 
 The Blackboard lets you save variables in five scopes.
 
-**Graph**: Available in the current graph.
+- **Graph**: Available in the current graph.
 
-**Object**: Available for any graph on the current gameObject. 
-- Unembedded graphs can access an object-scope variable. However, the graph must be connected to a machine component on the relevant gameObject.
+- **Object**: Available for any graph on the current gameObject. 
+  - Unembedded graphs can access an object-scope variable. However, the graph must be connected to a machine component on the relevant gameObject.
 
-**Scene**: Available for any graph in the current scene.
-- Unembedded graphs can access a scene-scope variable. However, the graph must be connected to a machine component on some gameObject in the scene.
+- **Scene**: Available for any graph in the current scene.
+  - Unembedded graphs can access a scene-scope variable. However, the graph must be connected to a machine component on some gameObject in the scene.
 
-**App**: Available for any graph. Resets when the game finishes running.
+- **App**: Available for any graph. Resets when the game finishes running.
 
-**Saved**: Available for any graph. Doesn't reset when the game finishes running.
-- Under the tab for saved variables, you can access both the original value of the variables (from before the first save), and the current saved values.
-- The "Save Variables" node saves the variables in this scope as they currently are.
+- **Saved**: Available for any graph. Doesn't reset when the game finishes running.
+  - Under the tab for saved variables, you can access both the original value of the variables (from before the first save), and the current saved values.
+  - The "Save Variables" node saves the variables in this scope as they currently are.
 
 ## Creating and Using Blackboard Variables
 

@@ -44,7 +44,7 @@ Why? When you make a new C# script, the visual scripting system doesn't necessar
 
 Go to Edit > Project Settings > Visual Scripting. You should see something like this.
 
-<img alt="img1.png" height="400" src="../Images/4/img1.png"/>
+<img alt="img1.png" height="300" src="../Images/4/img1.png"/>
 
 Click **Regenerate Nodes** to update your visual scripting nodes so they reflect your current C# code.
 
@@ -52,19 +52,19 @@ Then, return to the graph editor and the search "PrintScript" in the node creati
 
 Create a PrintScript literal node. Your graph should look like this.
 
-<img alt="img2.png" height="400" src="../Images/4/img2.png"/>
+<img alt="img2.png" height="250" src="../Images/4/img2.png"/>
 
 The node doesn't know *which* PrintScript it's dealing with, yet. Fix this by pressing the button to the right of where it says "None." One PrintScript instance should be available: the one attached to your gameObject, which your graph knows about since it's embedded!
 
-<img alt="img3.png" height="400" src="../Images/4/img3.gif"/>
+<img alt="img3.png" height="250" src="../Images/4/img3.gif"/>
 
 Now, we have access to any public method or field in that instance of PrintScript! Let's tell it to run PrintMessage().
 
-<img alt="img4.png" height="400" src="../Images/4/img4.gif"/>
+<img alt="img4.png" height="250" src="../Images/4/img4.gif"/>
 
 Finally, tell PrintMessage what to print and when to run. This should be familiar from [Part 2](2_GraphsNodesAndFlow.md).
 
-<img alt="img4.png" height="400" src="../Images/4/img5.png"/>
+<img alt="img4.png" height="250" src="../Images/4/img5.png"/>
 
 Play the game, and you should see that message show up in the console!
 
