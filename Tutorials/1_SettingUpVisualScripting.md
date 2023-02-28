@@ -14,11 +14,21 @@ The installation for visual scripting depends on your version of Unity.
 
 If you have an earlier version of Unity, you'll have to <a href="https://assetstore.unity.com/packages/tools/visual-scripting/bolt-163802"> download Bolt on the Unity Asset Store</a>. (Bolt and Unity Visual Scripting are the same thing; it was called Bolt back when it was a third-party package.)
 
-Once you've downloaded Bolt, open Unity and go to the Package Manager (Window > Package Manager). A list of packages will appear--but not the list you actually want. Right now, it's only listing the packages already installed in your project. Click "Packages: In Project" and change it to "Packages: My Assets" to include things you've downloaded off the Asset Store. Select Bolt in the resulting list, and then press Import.
+Once you've downloaded Bolt, open Unity and go to the Package Manager (Window > Package Manager). 
 
-All you need to do now is configure Bolt. Go to Tools > Install Bolt, and a setup window will appear. Most of the defaults should be okay. One notable choice is the one between "Programmer Naming" and "Human Naming." This tutorial series will use Programmer Naming. I recommend choosing it too since, when looking up the solution to a problem in Unity, most results will use the "programmer name" of the tools you're dealing with.
+A list of packages will appear--but not the list you actually want. Right now, it's only listing the packages already installed in your project.
 
-Note: This tutorial series will focus on Visual Scripting from Unity 2021.1 and beyond, which looks slightly different than Bolt for the older versions.
+Click "Packages: In Project" and change it to "Packages: My Assets" to include things you've downloaded off the Asset Store. Then, select Bolt in the resulting list.
+
+<img alt="img1-1.png" height="200" src="../Images/1/img1.gif"/>
+
+Finally, press Import on the bottom of the window.
+
+All you need to do now is configure Bolt. Go to Tools > Install Bolt, and a setup window will appear. 
+
+Most of the defaults should be okay. One notable choice is the one between "Programmer Naming" and "Human Naming." This tutorial series will use Programmer Naming. I recommend choosing it too since, when looking up the solution to a problem in Unity, most results will use the "programmer name" of the tools you're dealing with.
+
+**Note:** This tutorial series will focus on Visual Scripting from Unity 2021.1 and beyond, which looks slightly different than Bolt for the older versions.
 
 ### Versions 2018.4.23 and Older 
 According to Bolt's page on the Unity Asset Store, the earliest version of Unity it will work with is 2018.4.24. So, unfortunately, you'll have to upgrade if you're using any version older than that.
